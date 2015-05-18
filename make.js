@@ -49,11 +49,13 @@ target.lint = function() {
 };
 
 target.test = function () {
+    target.build();
     target.lint();
     karma('start', '--single-run');
 };
 
 target.ci = function () {
+    target.build();
     target.lint();
     ['ie', 'ienew', 'chrome', 'android', 'ios', 'firefox'].forEach(function(browserType){
         env['BROWSER_TYPE'] = browserType;
