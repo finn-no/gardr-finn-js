@@ -41,7 +41,7 @@
   "dependencies": {
     "eventlistener": "0.0.1",
     "gardr-core-plugin": "0.1.0",
-    "gardr-ext": "^1.0.0-alpha.2",
+    "gardr-ext": "^1.0.0-alpha.3",
     "gardr-host": "^1.0.0-alpha.1",
     "gardr-plugin-ext-burt": "^1.0.0",
     "gardr-plugin-ext-unique-token": "^0.1.0",
