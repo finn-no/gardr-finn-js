@@ -1,0 +1,13 @@
+{
+    "groupId": "no.finntech",
+    "repositories": [
+      {
+        "id": "finntech-internal-snapshot",
+        "url": "http://mavenproxy.finntech.no/finntech-internal-snapshot/"
+      },
+      {
+        "id": "finntech-internal-release",
+        "url": "http://mavenproxy.finntech.no/finntech-internal-release/"
+      }
+    ]
+}

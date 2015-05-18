@@ -1,0 +1,10 @@
+node_modules
+.idea
+.DS_Store
+dist
+*.log
+.tern-port
+target
+*.iml
+*.sublime-workspace
+npm-debug.log

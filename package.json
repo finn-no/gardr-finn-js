@@ -1,0 +1,55 @@
+{
+  "name": "gardr-finn-js",
+  "version": "1.0.0-SNAPSHOT",
+  "description": "Customize Garðr-bundles with plugins and config for FINN.no",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "test": "node make test",
+    "test-ci": "node make ci",
+    "build": "node make build",
+    "mvn-install": "node make install",
+    "mvn-snapshot": "node make snapshot",
+    "mvn-release": "node make release"
+  },
+  "homepage": "http://www.gardr.org",
+  "repository": "http://github.com/finn-no/gardr-finn-js",
+  "bugs": "http://github.com/finn-no/gardr-finn-js/issues",
+  "author": "FINN.no AS",
+  "contributors": [
+    "Gregers Rygg <gregers@finn.no>",
+    "Michael Gunnulfsen <michael.gunnulfsen@finn.no>",
+    "sveinung Rosaker <sveinung.rosaker@finn.no>"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^10.2.0",
+    "expect.js": "^0.3.1",
+    "finn-js-code-style": "^4.3.0",
+    "karma": "^0.12.31",
+    "karma-browserify": "^4.1.2",
+    "karma-es5-shim": "0.0.4",
+    "karma-mocha": "^0.1.10",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-sauce-launcher": "^0.2.11",
+    "karma-sinon": "^1.0.4",
+    "maven-deploy": "^1.0.0",
+    "mocha": "^2.2.4",
+    "shelljs": "^0.3.0",
+    "sinon": "^1.14.1",
+    "uglify-js": "2.4.22"
+  },
+  "dependencies": {
+    "eventlistener": "0.0.1",
+    "gardr-core-plugin": "0.1.0",
+    "gardr-ext": "^1.0.0-alpha.2",
+    "gardr-host": "^1.0.0-alpha.1",
+    "gardr-plugin-ext-burt": "^1.0.0",
+    "gardr-plugin-ext-unique-token": "^0.1.0",
+    "gardr-plugin-ext-wallpaper": "^0.0.2",
+    "gardr-plugin-host-burt": "^1.0.0",
+    "gardr-plugin-host-resize": "^0.1.0",
+    "gardr-plugin-host-wallpaper": "^0.0.3",
+    "query-params": "0.0.1",
+    "util-extend": "1.0.1"
+  }
+}
