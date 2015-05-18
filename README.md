@@ -1,14 +1,15 @@
 # Garðr - FINN bundle
 
+
 [![Build Status](https://api.travis-ci.org/finn-no/gardr-finn-js.png?branch=master)](https://travis-ci.org/finn-no/gardr-finn-js)
 [![Dependency Status](https://david-dm.org/finn-no/gardr-finn-js.png)](https://david-dm.org/finn-no/gardr-finn-js)
 [![devDependency Status](https://david-dm.org/finn-no/gardr-finn-js/dev-status.png)](https://david-dm.org/finn-no/gardr-finn-js#info=devDependencies)
+
 
 [![Sauce Test Status](https://saucelabs.com/browser-matrix/gardr-finn-js.svg)](https://saucelabs.com/u/gardr-finn-js)
 
 
 Garðr is a library for embedding content from external sources such as advertisements or similar third party content. This project bundles together the host, ext and plugins needed for FINN.no, so we can use this in our different apps where we use Garðr.
-
 
 
 # Building
@@ -19,7 +20,7 @@ Garðr is a library for embedding content from external sources such as advertis
 ## Building
 
     $ npm install
-    $ node make build
+    $ npm run build
 
 
 ## Logging
