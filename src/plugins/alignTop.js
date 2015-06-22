@@ -12,7 +12,7 @@ function floatRight(params) {
         var url = params.url;
         if (url && url.indexOf('finnkode=') > -1) {
             domready(function() {
-                document.body.style.cssFloat = 'right'
+                document.body.style.cssFloat = 'right';
             });
         }
     }
