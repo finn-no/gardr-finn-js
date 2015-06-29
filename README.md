@@ -14,7 +14,7 @@ Garðr is a library for embedding content from external sources such as advertis
 
 # Building
 
-## Pre-requisits
+## Prerequisites
 * [NodeJS + NPM](http://nodejs.org)
 
 ## Building
