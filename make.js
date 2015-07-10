@@ -51,12 +51,14 @@ target.lint = function() {
 target.test = function () {
     target.build();
     target.lint();
+    env['PHANTOMJS_BIN'] = require('phantomjs2').path;
     karma('start', '--single-run');
 };
 
 target.ci = function () {
     target.build();
     target.lint();
+    env['PHANTOMJS_BIN'] = require('phantomjs2').path;
     ['ie', 'ienew', 'chrome', 'android', 'ios', 'firefox'].forEach(function(browserType){
         env['BROWSER_TYPE'] = browserType;
         karma('start', '--single-run');
