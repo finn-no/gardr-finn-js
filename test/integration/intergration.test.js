@@ -51,6 +51,7 @@ function generateUrlSetup() {
 }
 
 describe('intergration', function(){
+    this.timeout(5000);
 
     ['desktop', 'mobile'].forEach(function(key) {
 
