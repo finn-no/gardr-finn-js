@@ -34,7 +34,7 @@
     "karma-sinon": "^1.0.4",
     "maven-deploy": "^1.0.0",
     "mocha": "^2.2.4",
-    "phantomjs2": "^2.0.0",
+    "phantomjs": "^1.9.17",
     "shelljs": "^0.3.0",
     "sinon": "^1.14.1",
     "uglify-js": "2.4.22"
