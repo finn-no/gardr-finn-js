@@ -23,6 +23,15 @@ function platformPath(p) {
     return p.split('/').join(path.sep);
 }
 
+function setupPhantomPath() {
+    if (!env['PHANTOMJS_BIN']) {
+        var path  = require('phantomjs2').path;
+        if (path) {
+            env['PHANTOMJS_BIN'] = path;
+        }
+    }
+}
+
 maven.config(require('./maven-config.json'));
 
 target.build = function() {
@@ -51,14 +60,13 @@ target.lint = function() {
 target.test = function () {
     target.build();
     target.lint();
-    env['PHANTOMJS_BIN'] = require('phantomjs2').path;
+    setupPhantomPath();
     karma('start', '--single-run');
 };
 
 target.ci = function () {
     target.build();
     target.lint();
-    env['PHANTOMJS_BIN'] = require('phantomjs2').path;
     ['ie', 'ienew', 'chrome', 'android', 'ios', 'firefox'].forEach(function(browserType){
         env['BROWSER_TYPE'] = browserType;
         karma('start', '--single-run');
