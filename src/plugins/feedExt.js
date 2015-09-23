@@ -23,6 +23,12 @@ function registerFeedPlugin(gardrParams) {
             data: keyValues
         });
     });
+
+    finnBanner.registerPlugin('feedData', function() {
+        if (gardrParams.data && gardrParams.data.feed) {
+            return gardrParams.data.feed;
+        }
+    });
 }
 
 function createParamData(url) {
