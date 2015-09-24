@@ -4,8 +4,9 @@
   "description": "Customize Garðr-bundles with plugins and config for FINN.no",
   "scripts": {
     "clean": "rm -rf dist",
-    "test": "node make test",
+    "test": "npm run build && karma start --single-run",
     "test-ci": "node make ci",
+    "posttest": "node make lint",
     "build": "node make build",
     "mvn-install": "node make install",
     "mvn-snapshot": "node make snapshot",

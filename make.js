@@ -66,10 +66,8 @@ target.lint = function() {
 };
 
 target.test = function () {
-    target.build();
-    target.lint();
     setupPhantomPath();
-    karma('start', '--single-run');
+    exec('npm test');
 };
 
 target.ci = function () {
