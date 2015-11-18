@@ -1,6 +1,6 @@
 {
   "name": "gardr-finn-js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Customize Garðr-bundles with plugins and config for FINN.no",
   "scripts": {
     "clean": "rm -rf dist",
