@@ -50,7 +50,7 @@ function generateUrlSetup() {
     ];
 }
 
-describe('intergration', function(){
+describe('integration', function(){
     this.timeout(5000);
 
     ['desktop', 'mobile'].forEach(function(key) {
