@@ -36,9 +36,17 @@ module.exports = function(config) {
         colors: true,
         logLevel: config.LOG_INFO,
         autoWatch: true,
-        browsers: ['PhantomJS'],
+        browsers: ['Chrome'],
         captureTimeout: 30000,
-        singleRun: false
+        singleRun: false,
+        plugins: [
+            'karma-phantomjs-launcher',
+            'karma-chrome-launcher',
+            'karma-sinon',
+            'karma-es5-shim',
+            'karma-browserify',
+            'karma-mocha'
+        ]
     };
 
 
