@@ -32,7 +32,6 @@
     "karma-chrome-launcher": "^0.2.1",
     "karma-es5-shim": "0.0.4",
     "karma-mocha": "^0.1.10",
-    "karma-phantomjs-launcher": "^0.2.0",
     "karma-sauce-launcher": "^0.2.11",
     "karma-sinon": "^1.0.4",
     "maven-deploy": "^1.0.0",

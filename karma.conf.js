@@ -40,7 +40,6 @@ module.exports = function(config) {
         captureTimeout: 30000,
         singleRun: false,
         plugins: [
-            'karma-phantomjs-launcher',
             'karma-chrome-launcher',
             'karma-sinon',
             'karma-es5-shim',
