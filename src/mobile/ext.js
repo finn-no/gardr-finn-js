@@ -12,7 +12,7 @@ gardrExt.plugin(feed);
 
 // start gardr ext
 gardrExt({
-    allowedDomains: ['helios.finn.no'],
+    allowedDomains: ['helios.finn.no','www.finn.no'],
     burtScript: '//m.burt.io/f/finn-no.xdi.js',
     burtConnect: function(burtUnit, el) {
         if (!burtUnit) {
