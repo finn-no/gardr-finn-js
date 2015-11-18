@@ -41,6 +41,7 @@ module.exports = function(config) {
         singleRun: false,
         plugins: [
             'karma-chrome-launcher',
+            'karma-sauce-launcher',
             'karma-sinon',
             'karma-es5-shim',
             'karma-browserify',
