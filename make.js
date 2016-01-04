@@ -94,8 +94,8 @@ target.release = function() {
     var args = process.argv.slice(3);
     var nextVersion = args.shift() || 'patch';
 
-    echo('npm version ' + nextVersion);
-    echo('git push --follow-tags origin master');
+    exec('npm version ' + nextVersion);
+    exec('git push --follow-tags origin master');
     maven.deploy('finntech-internal-release', false);
 };
 
