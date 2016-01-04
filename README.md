@@ -22,6 +22,18 @@ Garðr is a library for embedding content from external sources such as advertis
     $ npm install
     $ npm run build
 
+## Releasing
+
+We have release scripts that bumps version, tags git, pushes to git with tags, deploys to maven and publishes to npm. All you have to do is choose patch/minor/major:
+
+    $ npm run release:patch
+    $ npm run release:minor
+    $ npm run release:major
+
+To test the new version locally before a release, use [npm link](https://docs.npmjs.com/cli/link) for npm, or one of the maven scripts
+
+    $ npm run maven:install
+    $ npm run maven:snapshot
 
 ## Logging
 

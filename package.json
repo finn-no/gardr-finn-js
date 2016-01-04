@@ -9,9 +9,13 @@
     "test-ci": "node make ci",
     "posttest": "node make lint",
     "build": "node make build",
-    "mvn-install": "node make install",
-    "mvn-snapshot": "node make snapshot",
-    "mvn-release": "node make release"
+
+    "release:patch": "node make release patch",
+    "release:minor": "node make release minor",
+    "release:major": "node make release major",
+
+    "maven:install": "node make install",
+    "maven:snapshot": "node make snapshot"
   },
   "homepage": "http://www.gardr.org",
   "repository": "http://github.com/finn-no/gardr-finn-js",
