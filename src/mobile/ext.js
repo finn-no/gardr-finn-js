@@ -2,13 +2,14 @@ var gardrExt = require('gardr-ext');
 var burt = require('gardr-plugin-ext-burt');
 var feed = require('../plugins/feedExt');
 var userId = require('../plugins/userIdExt');
+var wallpaper = require('gardr-plugin-ext-wallpaper');
 var eventListener = require('eventlistener');
 
 // add plugins
 gardrExt.plugin(burt);
 gardrExt.plugin(userId);
 gardrExt.plugin(feed);
-
+gardrExt.plugin(wallpaper);
 
 // start gardr ext
 gardrExt({
