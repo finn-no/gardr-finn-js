@@ -1,6 +1,6 @@
 {
   "name": "gardr-finn-js",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Customize Garðr-bundles with plugins and config for FINN.no",
   "scripts": {
     "clean": "rm -rf dist",
@@ -9,11 +9,9 @@
     "test-ci": "node make ci",
     "posttest": "node make lint",
     "build": "node make build",
-
     "release:patch": "node make release patch",
     "release:minor": "node make release minor",
     "release:major": "node make release major",
-
     "maven:install": "node make install",
     "maven:snapshot": "node make snapshot"
   },
