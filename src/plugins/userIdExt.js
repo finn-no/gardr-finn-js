@@ -1,6 +1,6 @@
 // On gardr params:parsed event: parses the cookie and looks for
-// USERID and AREAID. If any of the values kvuserid or kvuserareaid
-// are not present on the parameters, they will be injected with
+// USERID. If kvuserid
+// is not present on the parameters, it will be injected with
 // the data from the cookie.
 
 // Important: This plugin must be executed before feedExt plugin,
@@ -16,7 +16,6 @@ module.exports = function(gardr) {
 function parseCookieAndInjectOnUrl(gardrParams) {
     parseCookie();
     tryToInject('kvuserid', 'userid', gardrParams);
-    tryToInject('kvuserareaid', 'userarea', gardrParams);
 }
 
 function parseCookie() {

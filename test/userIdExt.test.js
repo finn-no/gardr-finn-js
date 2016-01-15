@@ -28,7 +28,7 @@ describe('userIdExt', function() {
         expect(gardrParams.url).to.have.string(';kvuserid=' + userid);
     });
 
-    it('should append userid and areaid from cookie to url', function() {
+    it('should append userid from cookie to url', function() {
         var gardrParams = {
                 url: 'www.foo.com'
             },
@@ -41,24 +41,9 @@ describe('userIdExt', function() {
         userIdExt(this.pluginApi);
         this.pluginApi.trigger('params:parsed', gardrParams);
 
-        expect(gardrParams.url).to.equal('www.foo.com;kvuserid=' + userid + ';kvuserareaid=' + areaid);
+        expect(gardrParams.url).to.equal('www.foo.com;kvuserid=' + userid);
     });
 
-    it('should append USERID and USERAREA from cookie to url', function() {
-        var gardrParams = {
-                url: 'www.foo.com'
-            },
-            userid = 'userfoo',
-            areaid = 'areabar';
-
-        document.cookie = 'USERID=' + userid;
-        document.cookie = 'USERAREA=' + areaid;
-
-        userIdExt(this.pluginApi);
-        this.pluginApi.trigger('params:parsed', gardrParams);
-
-        expect(gardrParams.url).to.equal('www.foo.com;kvuserid=' + userid + ';kvuserareaid=' + areaid);
-    });
 
     it('should not append userid from cookie if userid is already on url', function() {
         var userid = 'bar';
